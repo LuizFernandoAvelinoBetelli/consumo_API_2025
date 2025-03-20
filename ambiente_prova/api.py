@@ -42,15 +42,6 @@ class API_Rick_Morty(API_consumer):
         except requests.exceptions.RequestException as e:
             return f"Erro ao acessar API Rick and Morty: {e}"
 
-
-
-
-
-
-
-
-
-
 class API_Star_Wars(API_consumer):
     ''' The universe of Star Wars '''
     def __init__(self):
@@ -61,8 +52,14 @@ class API_Star_Wars(API_consumer):
         return self.__URL
 
     def extract(self, id):
-    # Atividade 4, que resultará o terceiro commit
-        pass
+        try:
+            URL = self.URL + str(id)
+            response = requests.get(URL)
+            response.raise_for_status()
+            dado = response.json()
+            return (dado.get('name'), dado.get('films'))
+        except requests.exceptions.RequestException as e:
+            return f"Erro ao acessar API Star Wars: {e}"
 
 class API_Ice_and_Fire(API_consumer):
     ''' The universe of Ice And Fire '''
