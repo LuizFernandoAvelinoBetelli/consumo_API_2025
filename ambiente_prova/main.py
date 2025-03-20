@@ -11,20 +11,23 @@ class ETL:
             print('Falhou')
 
 etl = ETL()
+print('===================================================')
+
 print('\n\nConsumo da API Pokemon')
-print(40 * '*')
 etl.consume(1, API_Pokemon())
 etl.consume(2)
 
+print('===================================================')
 print('\n\nConsumo da API Rick and Morty')
-print(40 * '*')
 etl.consume(1, API_Rick_Morty())
 etl.consume(2, API_Rick_Morty())
+
+print('===================================================')
 print('\n\nConsumo da API Star Wars')
-print(40 * '*')
 etl.consume(1, API_Star_Wars())
 etl.consume(2, API_Star_Wars())
+
+print('===================================================')
 print('\n\nConsumo da API Crônicas do Gelo e do Fogo')
-print(40 * '*')
 etl.consume(583, API_Ice_and_Fire())
 etl.consume(2, API_Ice_and_Fire())
