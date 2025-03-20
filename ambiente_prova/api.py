@@ -81,3 +81,8 @@ class API_Ice_and_Fire(API_consumer):
         except requests.exceptions.RequestException as e:
             return f"Erro ao acessar API Ice and Fire: {e}"
 
+    def gerar_requeriments():
+        with open('requirements.txt', 'w') as f:
+            f.write('requests\n')
+    if __name__ == '__main__':
+        gerar_requeriments()
