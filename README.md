@@ -1,10 +1,16 @@
 # Consumo de APIS - Python 
 
-Nesse arquivo contém diferentes classes para consumir diferentes apis sendo elas : Pokémon, Rick and Morty, Star Wars e Ice and Fire.
+Esse projeto foi feito com o intuito de aprimorar minhas habilidades em consumo de APIs em Python. Nele o objetivo é consumir diferentes apis sendo elas : Pokémon, Rick and Morty, Star Wars e Ice and Fire.
 
 ## 📌 Tecnologias utilizadas  
 - Python
-- Requests (para fazer requisições HTTP)  
+- Requests (para fazer requisições HTTP)
+
+## Estrutura do Projeto
+
+- *main.py: Arquivo principal que consome as APIs e exibe os resultados.*
+- *api.py: Contém as classes que fazem o consumo das APIs.*
+- *requirements.txt: Lista as dependências do projeto.*
 
 ## 🚀 Como executar o projeto  
 
@@ -12,34 +18,28 @@ Nesse arquivo contém diferentes classes para consumir diferentes apis sendo ela
 
 *git clone https://github.com/LuizFernandoAvelinoBetelli/consumo_API_2025.git*
 
-*cd consumo_API_2025*
 
+2 - **`Crie o ambiente virtual (se ainda não tiver criado)`**
 
-2 - **`Instale as depéndencias`**
+- No Windows: python -m venv (nome ambiente)
+
+- No macOS/Linux: python3 -m venv (nome ambiente)
+  
+
+3 - **`Instale as depéndencias`**
 
 *pip install -r requirements.txt*
 
 
-3️ - **`Execute o código`**
+4 - **`Execute o código`**
 
-**Abra um terminal Python e faça testes com:**
+Abra um terminal Python:
 
-*from api_consumers import API_Pokemon
-api = API_Pokemon()
-print(api.extract(1))*
 
-4 - Geração do requirements.txt
+*python main.py*
+
+
+5 - Geração do requirements.txt
 
 *pip freeze > requirements.txt*
-
-
-
-5 - **Criar o `requirements.txt`**  
-Se ainda não estiver no repositório, gere o arquivo com:  
-
-*git add README.md requirements.txt*
-
-*git commit -m "Adicionando README e requirements.txt"*
-
-*git push origin main*
 
